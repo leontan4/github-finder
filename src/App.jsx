@@ -7,12 +7,12 @@ function App() {
 		<AuthWrapper>
 			<Router>
 				<Switch>
-					<PrivateRoute exact path="/">
+					<Route exact path="/">
 						<Dashboard></Dashboard>
-					</PrivateRoute>
-					<Route path="/login">
-						<Login />
 					</Route>
+					{/* <Route path="/login">
+						<Login />
+					</Route> */}
 					<Route path="*">
 						<Error />
 					</Route>
